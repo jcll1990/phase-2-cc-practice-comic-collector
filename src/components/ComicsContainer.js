@@ -1,10 +1,13 @@
 import Comic from "./Comic"
 
-function ComicsContainer() {
+function ComicsContainer({comics, setComics}) {
 
   return (
     <>
-      <Comic />
+      <Comic 
+      comics = {comics}
+      setComics={setComics}
+      />
     </>
   )
 
